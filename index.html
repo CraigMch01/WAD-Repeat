@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="Customer Information">
+		<meta name="keywords" content="NCI,Popular">
+		<meta name="author" content="OO'L">
+			<title>Home| Info</title>
+				<link rel="stylesheet" href="style.css">
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	</head>
+	
+	<body>
+	<header>
+	<div class="container">
+	<div id="branding">
+	<h1><span class="highlight">The</span> Website</h1>
+	</div>
+	<nav>
+	<ul>
+	<li class="current"><a href="index.html">Home</a></li>
+	</ul>
+	</nav>
+	</div>
+	</header>
+
+	<head>
+	<script>
+function display()
+{
+document.getElementById("displayarea").innerHTML = document.getElementById("fname").value; 
+document.getElementById("fname").value = "";
+
+document.getElementById("displayarea1").innerHTML = document.getElementById("lname").value; 
+document.getElementById("lname").value = "";
+
+document.getElementById("displayarea2").innerHTML = document.getElementById("gender").value; 
+document.getElementById("gender").value = "";
+
+document.getElementById("displayarea3").innerHTML = document.getElementById("cname").value; 
+document.getElementById("cname").value = "";
+
+document.getElementById("displayarea4").innerHTML = document.getElementById("jtitle").value; 
+document.getElementById("jtitle").value = "";
+}
+	</script>
+	</head>
+
+<body>
+<table bgcolor="#FF00FF" border="1" align="center">
+<tr>
+<td>FirstName</td>
+<td><input type="text" name="fname" id="fname"></td>
+</tr>
+<tr>
+<td>LastName</td>
+<td><input type="text" name=lname" id="lname"></td>
+</tr>
+
+<tr>
+<td>Gender</td>
+<td><input type="text" name=gender" id="gender"></td>
+</tr>
+
+<tr>
+<td>CollegeName</td>
+<td><input type="text" name=cname" id="cname"></td>
+</tr>
+
+<tr>
+<td>JobTitle</td>
+<td><input type="text" name=jtitle" id="jtitle"></td>
+</tr>
+
+<tr>
+<td>&nbsp</td>
+<td align="center"><input type="button" value="Submit" name="submit" id="submit" onClick="display()"/></td>
+</tr>
+</table>
+<table width="400px" align="center" border=0> 
+
+<tr style="background-color:#8FBC8F;">
+<td align="center"><b>First Name</b></td>
+<td align="center"><b>Last Name</b></td>
+<td align="center"><b>Gender</b></td>
+<td align="center"><b>College Name</b></td>
+<td align="center"><b>Job Title</b></td>
+</tr> 
+<tr>
+<td align="center"><div id="displayarea"></div></td>
+<td align="center"><div id="displayarea1"></div></td>
+<td align="center"><div id="displayarea2"></div></td>
+<td align="center"><div id="displayarea3"></div></td>
+<td align="center"><div id="displayarea4"></div></td>
+</tr>
+</table>
+
+	<div class = "comment-box">
+		<h2>Comments</h2>
+		<form action="#">
+			<input type="text" name="full_name" placeholder="Full name....">
+			<input type="email" name="email" placeholder="Email Address ...">
+			<textarea name="comment" placeholder="Type your comment ..."></textarea>
+			<button type="submit">Submit comment</button>
+		</form>
+
+
+	<footer>
+	<p>repeat, Copyright &copy; 2021</p>
+	</footer>
+	</form>
+	</div>
+</div>
+	</body>
+</html>
